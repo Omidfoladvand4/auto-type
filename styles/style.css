@@ -1,0 +1,81 @@
+﻿@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot'),
+     url('../fonts/vazir.ttf') format('truetype'),
+    url('../fonts/vazir.woff') format('woff'),
+    url('../fonts/vazir.woff2') format('woff2');
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'vazir';
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../img/bg.jpg');
+
+}
+.container{
+    width: 100%;
+    overflow-x: hidden;
+
+}
+h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+
+}
+
+h1 span{
+    color: #ec1350;
+    font-weight: bold;
+}
+h1 span::after{
+    content: '';
+    border-right: 4px solid #ec1350;
+    margin-right: 5px;
+    animation: blink 0.5s infinite ease;
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+h2{
+    color: #fff;
+    font-size: 40px;
+}
+
+@media screen and (max-width : 600px) {
+ h1{
+    font-size: 25px;
+ }
+ h2{
+    font-size: 25px;
+ }
+ h1,h2{
+   padding-right: 20px;
+
+ }
+}
+@media screen and (max-width : 800px) {
+    h1{
+       font-size: 45px;
+    }
+    h2{
+       font-size: 45px;
+    }
+    h1,h2{
+      padding-right: 20px;
+   
+    }
+   }
